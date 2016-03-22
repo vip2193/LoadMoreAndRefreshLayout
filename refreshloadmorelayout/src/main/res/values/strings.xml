@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoadMoreAndRefresh</string>
+
+    <string name="get_data_failed_please_get_again">哎呀，似乎出了点问题...</string>
+    <string name="is_loading">正在加载</string>
+    <string name="get_again">重新获取</string>
+    <string name="data_is_loaded">数据已经全部加载完毕</string>
+    <string name="load_failed_please_retry">获取失败，\n请检查网络连接并重新获取</string>
+
+</resources>

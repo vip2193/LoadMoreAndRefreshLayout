@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sampellistview.MainActivity">
+
+    <Button
+        android:id="@+id/emptyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟空数据" />
+
+    <Button
+        android:id="@+id/errorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/emptyButton"
+        android:text="模拟网络请求错误" />
+
+    <!--使用时必须用LinearLayout包裹loadmodeAndRefreshLayout布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp">
+
+        <com.model.loadmoreandrefresh.LoadMoreAndRefreshLayout
+            android:id="@+id/myRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ListView
+                android:id="@+id/mlistview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.model.loadmoreandrefresh.LoadMoreAndRefreshLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

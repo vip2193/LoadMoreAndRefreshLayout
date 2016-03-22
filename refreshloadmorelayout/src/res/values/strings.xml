@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoadMoreAndRefresh</string>
+
+    <string name="get_data_failed_please_get_again">哎呀，似乎出了点问题...</string>
+    <string name="is_loading">正在加载</string>
+    <string name="get_again">重新获取</string>
+
+</resources>
